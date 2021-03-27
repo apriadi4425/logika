@@ -4,4 +4,5 @@ const main = () => {
     return NewArray
 }
 
-console.log(main())
+let array = [1, 2 , 3 , 5 , 10, 3, 2]
+console.log(Math.min( ...array ))
