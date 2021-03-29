@@ -27,14 +27,14 @@
 // }
 
 const PapanCatur = (x, y) => {
-    let awal = 0
+    let i = j = awal = 0
     let papan = ''
 
-    for(let i = 0; i < x; i++){
+    for(i = 0; i < x; i++){
         papan += '\n'
         let hitam = awal;
 
-        for(let j = 0; j < y; j++){
+        for(j = 0; j < y; j++){
             papan += hitam === 0 ? '--' : '++'
             hitam = hitam === 0 ? 1 : 0
         }
