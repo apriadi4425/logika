@@ -11,16 +11,12 @@ const MenghitungKarakterSamaPadaArray = (arr) => {
     let jumlah = {}
 
     arr.forEach(item => {
-        if(jumlah[item]){
-            jumlah[item]++
-        }else{
-            jumlah[item] = 1
-        }
+        jumlah[item] ? jumlah[item]++ : jumlah[item] = 1
     });
 
     return jumlah; 
 }
 
-let data = 'aaabbcccaaaac'
+let data = 'aaabbcccaaaacx'
 let dataArray = data.split('')
 console.log(MenghitungKarakterSamaPadaArray(dataArray))

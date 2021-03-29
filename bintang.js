@@ -58,5 +58,3 @@ const piramida = (panjang) => {
     }
     return bintang;
 }
-
-console.log(piramida(5))
